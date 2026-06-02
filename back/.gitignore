@@ -1,0 +1,53 @@
+# ==========================================
+# 🏢 IntelliJ & IDE (개인 설정 및 로컬 환경)
+# ==========================================
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+gen/
+
+# ==========================================
+# ☕ Java & 빌드 도구 (Gradle / Maven)
+# ==========================================
+build/
+bin/
+.gradle/
+.mtj.tmp/
+*.class
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+
+# ==========================================
+# 🔍 JPA & Querydsl (자동 생성 파일 충돌 방지)
+# ==========================================
+# Querydsl의 QClass가 생성되는 경로입니다. 
+# 팀원 간 중복 클래스 에러를 막기 위해 반드시 포함해야 합니다.
+/src/main/generated/
+
+# Hibernate/JPA 로그 및 덤프 파일
+*.hprof
+
+# ==========================================
+# 🔐 Security & Config (DB 및 API 키 보안)
+# ==========================================
+# 로컬 개발 환경용 설정 파일 (DB 접속 정보 등 포함)
+src/main/resources/application-local.properties
+src/main/resources/application-local.yml
+src/main/resources/application-dev.yml
+
+# 기타 보안이 필요한 설정 (상황에 맞게 추가)
+src/main/resources/keystore.jks
+
+# ==========================================
+# 💻 OS & Logs (운영체제 쓰레기 및 로그)
+# ==========================================
+**/*.log
+.DS_Store
+Thumbs.db
+desktop.ini
+*.lock
